@@ -1,0 +1,1000 @@
+  117  sudo snap
+  118  apt install certbot
+  119  apt remove snap
+  120  sudo certbot certonly --manual --preferred-challenges=dns --email rvginfo@ravegroup.cz --server https://turingtest.ravegroup.cz/ --work-dir=. --config-dir=. --logs-dir=. --agree-tos -d login.turingtest.ravegroup.cz
+  121  ls
+  122  cat letsencrypt.log 
+  123  sudo certbot certonly --manual --preferred-challenges=dns --email rvginfo@ravegroup.cz --server https://turingtest.ravegroup.cz/ --work-dir=. --config-dir=. --logs-dir=. --agree-tos -d login.turingtest.ravegroup.cz
+  124  nohup /root/apps/rvgcaptcha/rvgcaptcha.py &
+  125  sudo certbot certonly --manual --preferred-challenges=dns --email rvginfo@ravegroup.cz --server https://turingtest.ravegroup.cz/ --work-dir=. --config-dir=. --logs-dir=. --agree-tos -d login.turingtest.ravegroup.cz
+  126  sudo certbot certonly --manual --preferred-challenges=dns --email rvginfo@ravegroup.cz --server https://turingtest.ravegroup.cz:5000/ --work-dir=. --config-dir=. --logs-dir=. --agree-tos -d login.turingtest.ravegroup.cz
+  127  ls
+  128  cd apps
+  129  ls
+  130  cd rvgcaptcha/
+  131  ls
+  132  cat rvgcaptcha.py 
+  133  exit
+  134  wget http://localhost:5000
+  135  cat index.html
+  136  wget http://localhost:5000
+  137  cat index.html
+  138  gunicorn -workers 2 wsgi:app
+  139  gunicorn
+  140  sudo apt install nginx
+  141  gunicorn
+  142  pip3 install gunicorn
+  143  gunicorn
+  144  locate gunicorn
+  145  which gunicorn
+  146  sudo reboot
+  147  cd /var
+  148  ls
+  149  cd www
+  150  ls
+  151  sudo mkdir application
+  152  cd application
+  153  ls
+  154  sudo chown -R www-data:www-data /var/www/application/
+  155  ls -l
+  156  sudo apt install python3-flask python3-gunicorn
+  157  mkdir
+  158  mkdir rvgcaptcha
+  159  ls
+  160  cd rvgcaptcha/
+  161  cd ..
+  162  ls -lh
+  163  cd rvgcaptcha/
+  164  ls
+  165  touch main.py wsgi.py
+  166  nano main.py
+  167  nano wsgi.py
+  168  flask run
+  169  ps ax | grep rvgcaptcha.py
+  170  kill 14003
+  171  ps ax | grep rvgcaptcha.py
+  172  flask run
+  173  ls
+  174  flask run
+  175  nano wsgi.py
+  176  flask run
+  177  nano wsgi.py
+  178  flask run
+  179  curl localhost:5000/
+  180  systemctl start nginx
+  181  systemctl status nginx.service
+  182  systemctl status nginx
+  183  systemctl stop nginx
+  184  systemctl status nginx
+  185  apt install reinstall nginx -y
+  186  apt install --reinstall nginx -y
+  187  systemctl start nginx
+  188  journalctl -xe
+  189  q
+  190  sudo apt remove apache
+  191  apt list apache
+  192  service apache2 stop
+  193  apt purge apache2 apache2-utils apache2.2-bin apache2-common
+  194  whereis apache2
+  195  service apache2 start
+  196  service apache2 status
+  197  service apache2 stop
+  198  sudo apt remove apache2*
+  199  whereis apache2
+  200  service apache2 start
+  201  service apache2 stop
+  202  service apache2 status
+  203  reboot
+  204  gunicorn
+  205  curl localhost:5000
+  206  wget localhost:5000
+  207  wget http://localhost:5000/
+  208  gunicorn --workers 2 wsgi:app
+  209  ls
+  210  cd apps
+  211  ls
+  212  cd rvgcaptcha/
+  213  ls
+  214  cd ..
+  215  cd /www
+  216  ls
+  217  cd /vart
+  218  cd /var
+  219  cd /www
+  220  cd www/
+  221  ls
+  222  cd application/
+  223  ls
+  224  cd rvgcaptcha/
+  225  gunicorn --workers 2 wsgi:app
+  226  pip3 install gunicorn
+  227  pip install gunicorn
+  228  python
+  229  python3 gunicorn
+  230  python3
+  231  sudo apt install gunicorn
+  232  gunicorn
+  233  ls
+  234  cd apps/
+  235  cd rvgcaptcha/
+  236  ls
+  237  cd ..
+  238  cd /www
+  239  cd /var/www/
+  240  ls
+  241  cd application/
+  242  ls
+  243  cd rvgcaptcha/
+  244  gunicorn --workers 2 wsgi:app
+  245  flask run
+  246  cd /var/www/application/
+  247  ls
+  248  mkdir src
+  249  cd src
+  250  nano wsgi.py
+  251  cd ..
+  252  ls
+  253  mv app.py src
+  254  cd src
+  255  ls -l
+  256  gunicorn --bind 0.0.0.0:5000 wsgi:app
+  257  systemctl stop nginx
+  258  gunicorn --bind 0.0.0.0:5000 wsgi:app
+  259  systemctl stop apache2'
+  260  systemctl stop apache2
+  261  gunicorn --bind 0.0.0.0:5000 wsgi:app
+  262  ls
+  263  nano wsgi.py
+  264  gunicorn --bind 0.0.0.0:5000 wsgi:app
+  265  cd æ
+  266  cd ~
+  267  ls
+  268  cd apps
+  269  ls
+  270  cd rvgcaptcha
+  271  ls
+  272  cd ..
+  273  ls
+  274  cp rvgcaptcha /var/www/application
+  275  cp -r rvgcaptcha /var/www/application
+  276  cd /var/www/application/
+  277  ls
+  278  cd src
+  279  ls
+  280  nano app.py
+  281  cd /var/www/
+  282  ls
+  283  cd application/
+  284  ls
+  285  cd rvgcaptcha/
+  286  ls
+  287  mv main.py ..
+  288  mv wsgi.py ..
+  289  cd ..
+  290  ls
+  291  nano app.py
+  292  python3 app.py
+  293  nano app.py
+  294  python3 app.py
+  295  nano app.py
+  296  python3 app.py
+  297  nano app.py
+  298  python3 app.py
+  299  locate gunicorn
+  300  whereis gunicorn
+  301  echo $Path
+  302  echo Path
+  303  echo path
+  304  echo $path
+  305  echo $PATH
+  306  gunicorn
+  307  ls
+  308  cd src/
+  309  ls
+  310  ls -l
+  311  ls
+  312  cat app.sock
+  313  ls -l
+  314  cat app.sock
+  315  ls
+  316  nano app.py
+  317  cd ..
+  318  ls
+  319  cd rvgcaptcha/
+  320  ls
+  321  ls accounts
+  322  rm -r accounts
+  323  rm -r backups
+  324  rm -r cert
+  325  rm letsencrypt.log 
+  326  nano rvgcaptcha.py 
+  327  nano wsgi.py
+  328  nano rvgcaptcha.py 
+  329  ls
+  330  gunicorn --bind 0.0.0.0:5000 wsgi:app
+  331  ls
+  332  apt install --reinstall nginx
+  333  systemctl start nginx
+  334  systemctl enable nginx
+  335  nano /etc/nginx/sites-available/application.conf
+  336  cd /etc
+  337  cd nginx/
+  338  ls
+  339  cd sites-available/
+  340  ls
+  341  nano application.conf
+  342  ln -s /etc/nginx/sites-available/application.conf /etc/nginx/sites-enabled/
+  343  ls /etc/nginx/sites-enabled
+  344  ls -l /etc/nginx/sites-enabled
+  345  systemctl restart nginx
+  346  cd /etc/systemd/system
+  347  ls
+  348  nano application.service
+  349  systemctl restart application.service
+  350  systemctl daemon-reload
+  351  curl http://application
+  352  curl localhost
+  353  service apache2 stop
+  354  curl localhost
+  355  curl localhost:5000
+  356  apt remove --purge apache2*
+  357  systemctl disable apache2
+  358  systemctl restart application.servcie
+  359  systemctl restart application.service
+  360  systemctl daemon-reload
+  361  curl localhost/application
+  362  curl http://localhos:5000
+  363  curl http://localhost:5000
+  364  curl http://localhost:5000/
+  365  curl http://localhost:5000/application
+  366  curl http://application
+  367  cd /var/www
+  368  ls
+  369  cd application/
+  370  ls
+  371  pyhton3 main.py
+  372  python3 main.py
+  373  cat main.py
+  374  ls
+  375  rm main.py
+  376  rm wsgi.py
+  377  ls
+  378  rmdir rvgcaptcha/
+  379  rmdir -R rvgcaptcha/
+  380  rm -R rvgcaptcha/
+  381  ls
+  382  cd /etc/nginx
+  383  ls
+  384  cd sites-enabled
+  385  ls
+  386  rm application.conf 
+  387  cd ..
+  388  ls
+  389  cd sites-available/
+  390  ls
+  391  cat application.conf 
+  392  rm application.conf 
+  393  ls -l
+  394  cd ..
+  395  curl http://localhost:5000
+  396  ls
+  397  cd /etc/systemd
+  398  ls
+  399  cd system
+  400  ls
+  401  rm apache2.service
+  402  cat application.service
+  403  rm application.service
+  404  nano app.service
+  405  systemctl start app
+  406  systemctl stop app
+  407  systemctl start app
+  408  systemctl enable app
+  409  nano app.service
+  410  systemctl restart app
+  411  systemcetl daemon-reload
+  412  systemctl daemon-reload
+  413  systemctl restart app
+  414  systemctl enable app
+  415  cd /etc/nginx
+  416  ls
+  417  cd sites-available/
+  418  nano app
+  419  ln -s /etc/nginx/sites-available/app /etc/nginx/sites-enabled
+  420  nginx -t
+  421  ls
+  422  nano app
+  423  nginx -t
+  424  systemctl restart nginx
+  425  ufw allow 'Nginx Full'
+  426  systemctl status nginx
+  427  cd /var/www/application/
+  428  ls
+  429  cd rvgcaptcha/
+  430  ls
+  431  cd rvgcaptcha/
+  432  curl http://localhost:5000/
+  433  cd /etc/systemd/system/
+  434  ls
+  435  cat app.service
+  436  cp app.service rvgcaptcha.service
+  437  nano rvgcaptcha.service
+  438  rm app.service
+  439  systemctl start rvgcaptcha
+  440  systemctl enable rvgcaptcha
+  441  systemctl disable app
+  442  cd /etc/nginx/sites-available/
+  443  ls
+  444  cp app rvgcaptcha
+  445  ls
+  446  rm app
+  447  nano rvgcaptcha
+  448  ln -s /etc/nginx/sites-available/rvgcaptcha /etc/nginx/sites-enabled/
+  449  cd ..
+  450  cd sites-enabled/
+  451  ls
+  452  rm app
+  453  ls
+  454  sudo systemctl restart nginx
+  455  qurl localhost:5000/
+  456  curl localhost:5000/
+  457  curl http://localhost:5000/
+  458  sudo apt update
+  459  apt list --upgradable
+  460  apt install dist-upgrade -y
+  461  apt dist-upgrade -y
+  462  apt install certbot --reinstall
+  463  apt install python-certbot-nginx
+  464  apt install python3-certbot-nginx
+  465  sudo systemctl restart nginx
+  466  crontab -e
+  467  nano /etc/nginx/conf.d
+  468  cd /etc
+  469  cd nginx
+  470  ls
+  471  cat conf.d
+  472  cd conf.d
+  473  ls
+  474  touch turingtest.ravegroup.cz
+  475  ls -l
+  476  mv turingtest.ravegroup.cz turingtest.ravegroup.cz.conf
+  477  ls -l
+  478  nano turingtest.ravegroup.cz.conf 
+  479  nging -t
+  480  nginx -t
+  481  ls
+  482  rm turingtest.ravegroup.cz.conf 
+  483  nginx -t
+  484  cd ..
+  485  ls
+  486  cd modules-available/
+  487  ls
+  488  cd ..
+  489  cd sites-enabled/
+  490  ls
+  491  cd ..
+  492  cd sites-available/
+  493  ls
+  494  nano rvgcaptcha 
+  495  cp rvgcaptcha rvgcaptcha.bak
+  496  nano rvgcaptcha 
+  497  cd ..
+  498  ls
+  499  cd sites-enabled/
+  500  ls
+  501  cat rvgcaptcha 
+  502  cd ..
+  503  nginx -t
+  504  ls
+  505  cd sites-available/
+  506  ls
+  507  mv rvgcaptcha.bak ..
+  508  cd ..
+  509  ls sites-available/
+  510  nginx -t
+  511  cat nginx.conf
+  512  ls
+  513  cd sites-available/
+  514  ls
+  515  cd ..
+  516  mv *.bak ./sites-available/
+  517  cd sites-available/
+  518  ls
+  519  nano rvgcaptcha
+  520  nginx -t
+  521  nano rvgcaptcha
+  522  nginx -t
+  523  nano rvgcaptcha
+  524  nginx -t
+  525  nano rvgcaptcha
+  526  nginx -t
+  527  nano rvgcaptcha
+  528  nginx -t
+  529  ls -l
+  530  cat rvgcaptcha.bak
+  531  nginx -t
+  532  nano rvgcaptcha
+  533  nginx -t
+  534  nano rvgcaptcha
+  535  nginx -t
+  536  nano rvgcaptcha
+  537  nginx -t
+  538  nano rvgcaptcha
+  539  nginx -t
+  540  nano rvgcaptcha
+  541  nginx -t
+  542  nginx -s reload
+  543  sudo certbot -nginx -d turingtest.ravegroup.cz
+  544  sudo certbot --nginx -d turingtest.ravegroup.cz
+  545  ls
+  546  cat rvgcaptcha
+  547  crontab -e
+  548  ls
+  549  cd /var
+  550  ls
+  551  cd log
+  552  ls
+  553  ls -lh
+  554  cat wtmp
+  555  ls -lh
+  556  cat syslog
+  557  cat syslog | grep "uuid_dictionary"
+  558  cat syslog
+  559  nginx -s reload
+  560  cat syslog
+  561  cat rvgcaptcha.py
+  562  reboot
+  563  cd /var/www/html/
+  564  ls
+  565  cd ..
+  566  ls
+  567  cd application
+  568  ls
+  569  cd rvgcaptcha/
+  570  cd /usr/bin
+  571  ls cert*
+  572  cd /var/www/application/rvgcaptcha/
+  573  ls
+  574  cat rvgcaptcha.py
+  575  ls
+  576  nano rvgcaptcha.py
+  577  cd /var/log
+  578  ls
+  579  cat syslog
+  580  cd /var/www/application/
+  581  ls
+  582  cd rvgcaptcha/
+  583  ls
+  584  cat rvgcaptcha.py 
+  585  cd ..
+  586  cd pycache
+  587  ls
+  588  cd rvgcaptcha/
+  589  ls
+  590  cat __pycache__
+  591  cd __pycache__/
+  592  ls
+  593  cat rvgcaptcha.cpython-38.pyc 
+  594  cd ..
+  595  ls
+  596  rm ./__pycache__/*
+  597  ls __pycache__/
+  598  nginx -s reload
+  599  ls -l
+  600  ls __pycache__/
+  601  reboot
+  602  cd /var/www/application/rvgcaptcha/
+  603  cat rvgcaptcha.py 
+  604  nano rvgcaptcha.py 
+  605  ls
+  606  ls __pycache__/
+  607  rm ./__pycache__/*
+  608  reboot
+  609  cd /var/log
+  610  cat syslog
+  611  ls
+  612  cd /var/log
+  613  ls
+  614  cat syslog
+  615  cd /var/www/application/rvgcaptcha/
+  616  ls
+  617  cat rvgcaptcha.py
+  618  emacs rvgcaptcha.py 
+  619  cd /etc/systemd/system/
+  620  nano app.service
+  621  ls
+  622  nano rvgcaptcha.service 
+  623  systemctl start rvgcaptcha.service 
+  624  systemctl enable rvgcaptcha.service 
+  625  cd /var/www/application/rvgcaptcha/
+  626  ls
+  627  ls -lh
+  628  cat app.sock
+  629  cd app.sock
+  630  systemctl restart nginx
+  631  emacs rvgcaptcha.py 
+  632  cat rvgcaptcha.py
+  633  ls -lh
+  634  ls __pycache__/
+  635  rm ./__pycache__/*
+  636  ls __pycache__/
+  637  sudo reboot
+  638  cd /var/log
+  639  cat syslog
+  640  cd /var/www/application/rvgcaptcha/
+  641  emacs rvgcaptcha.py
+  642  reboot
+  643  cd /var/www/application/rvgcaptcha/
+  644  ls
+  645  ls -lh
+  646  python3 rvgcaptcha.py
+  647  emacs rvgcaptcha.py
+  648  python3 rvgcaptcha.py
+  649  reboot
+  650  cd /var/log
+  651  cat syslog
+  652  cd /var/www/application/rvgcaptcha/
+  653  emacs rvgcaptcha.py
+  654  python3 rvgcaptcha.py
+  655  emacs rvgcaptcha.py
+  656  python3 rvgcaptcha.py
+  657  emacs rvgcaptcha.py
+  658  python3 rvgcaptcha.py
+  659  emacs rvgcaptcha.py
+  660  python3 rvgcaptcha.py
+  661  reboot
+  662  cd /var/logs
+  663  cd /var/log
+  664  cat syslog
+  665  cd /var/www/application/rvgcaptcha/
+  666  emacs rvgcaptcha.py
+  667  python3 rvgcaptcha.py
+  668  reboot
+  669  cd /var/www/application/rvgcaptcha/
+  670  emacs rvgcaptcha.py
+  671  systemctl restart nginx
+  672  reboot
+  673  cd /var/log
+  674  cat syslog
+  675  cd /var/www/application/rvgcaptcha/
+  676  ls -lh
+  677  cat wsgi.py
+  678  emacs wsgi.py
+  679  emacs rvgcaptcha.py
+  680  pyton rvgcaptcha.py
+  681  reboot
+  682  cd /var/www/application/rvgcaptcha/
+  683  cat rvgcaptcha.py
+  684  cd /var/www/application/rvgcaptcha/
+  685  cat rvgcaptcha.py
+  686  cd /var/www/application/rvgcaptcha/
+  687  ls
+  688  emacs rvgcaptcha.py
+  689  reboot
+  690  cd /var/log
+  691  cat syslog
+  692  cd /var/www/application/rvgcaptcha/
+  693  ls
+  694  cat wsgi.py
+  695  emacs wsgi.py
+  696  reboot
+  697  cd /var/www/application/rvgcaptcha/
+  698  emacs rvgcaptcha.py
+  699  ls
+  700  emacs wsgi.py
+  701  emacs rvgcaptcha.py
+  702  reboot
+  703  cd /var/www/application/rvgcaptcha/
+  704  ls
+  705  emacs wsgi.py
+  706  emacs rvgcaptcha.py
+  707  emacs wsgi.py
+  708  emacs rvgcaptcha.py
+  709  reboot
+  710  cd /var/log
+  711  cat syslog
+  712  cd /var/log
+  713  cat syslog
+  714  cd /var/www/application/rvgcaptcha/
+  715  ls
+  716  rm __pycache__/*
+  717  ls __pycache__/
+  718  reboot
+  719  cd /var/log
+  720  cat syslog
+  721  cd /var/www/application/rvgcaptcha/
+  722  emacs rvgcaptcha.py
+  723  emacs wsgi.py
+  724  cat rvgcaptcha
+  725  cat rvgcaptcha.py
+  726  emacs wsgi.py
+  727  reboot
+  728  cd /var/www/application/rvgcaptcha/
+  729  ls
+  730  emacs wsgi.py
+  731  reboot
+  732  ls
+  733  cd /var/www/application/rvgcaptcha/
+  734  emacs rvgcaptcha.py
+  735  cd /var/www/application/rvgcaptcha/
+  736  emacs rvgcaptcha.py
+  737  reboot
+  738  cd /var/log
+  739  cat syslog
+  740  cd /var/log
+  741  cat syslog
+  742  cd /var/www/application/rvgcaptcha/
+  743  emacs rvgcaptcha.py
+  744  reboot
+  745  cd /var/www/application/rvgcaptcha/
+  746  ls -l
+  747  rm __pycache__/*
+  748  reboot
+  749  cd /var/www/application/rvgcaptcha/
+  750  emacs rvgcaptcha.py
+  751  reboot
+  752  cd /var/log
+  753  cat syslog
+  754  cd /var/www/application/rvgcaptcha/
+  755  emacs wsgi.py
+  756  emacs rvgcaptcha.py
+  757  reboot
+  758  cd /var/log
+  759  cat syslog
+  760  cd /var/ww
+  761  cd /var/www
+  762  cd /var/log
+  763  cat syslog
+  764  cd /var/www/application/rvgcaptcha/
+  765  emacs rvgcaptcha.py
+  766  reboot
+  767  cd /var/log
+  768  cat syslog
+  769  cd /var/www/application/rvgcaptcha/
+  770  emacs rvgcaptcha.py
+  771  reboot
+  772  cd /var/www/application/rvgcaptcha/
+  773  emacs rvgcaptcha.py
+  774  emacs wsgi.py
+  775  emacs rvgcaptcha.py
+  776  emacs wsgi.py
+  777  emacs rvgcaptcha.py
+  778  reboot
+  779  cd /var/log
+  780  cat syslog
+  781  cd /var/www/application/rvgcaptcha/
+  782  emacs wsgi
+  783  emacs wsgi.py
+  784  reboot
+  785  cd /var/www/application/rvgcaptcha/
+  786  emacs rvgcaptcha.py
+  787  cd /var/www/application/rvgcaptcha/
+  788  emacs wsgi.py
+  789  reboot
+  790  clar
+  791  cls
+  792  clear
+  793  cd /var/log
+  794  cat syslog
+  795  cd /var/www/application/rvgcaptcha/
+  796  emacs rvgcaptcha.py
+  797  emacs wsgi.py
+  798  emacs rvgcaptcha.py
+  799  reboot
+  800  cd /var/log
+  801  cat syslog
+  802  cd /var/log
+  803  cat syslog
+  804  ls -lh
+  805  cat gunicorn
+  806  cd gunicorn
+  807  ls
+  808  cd ..
+  809  cd journal
+  810  ls
+  811  cat 6dec39062e8d4999a8153e96753cd431/
+  812  cd 6dec39062e8d4999a8153e96753cd431/
+  813  ls
+  814  cat system@000
+  815  ls
+  816  cd ..
+  817  ls
+  818  cd ..
+  819  ls
+  820  cd nginx
+  821  ls
+  822  cat access.log
+  823  cd /var/www/application/r
+  824  cd /var/www/application/rvgcaptcha/
+  825  cat rvgcaptcha.py
+  826  cd /var/www/application/rvgcaptcha/
+  827  emacs wsgi.py
+  828  emacs rvgcaptcha.py
+  829  sudo apt update
+  830  sudo apt dist-upgrade -y
+  831  ls
+  832  cd /var/www/application/
+  833  ls
+  834  cd rvgcaptcha/
+  835  ls
+  836  mkdir backukp
+  837  rmdir backukp
+  838  mkdir oldversion
+  839  cp rvgcaptcha.py ./oldversion/rvgcaptcha.py.bak
+  840  cp wsgi.py ./oldversion/wsgi.py.bak
+  841  ls
+  842  ls -lh
+  843  nano rvgcaptcha.py
+  844  sudo reboot
+  845  free -h
+  846  cd /var/www/application/rvgcaptcha/
+  847  ls
+  848  cd static
+  849  ls -lh
+  850  rm *
+  851  ls -lh
+  852  cd ..
+  853  cd /var/www/application/rvgcaptcha/static/
+  854  ls -lh
+  855  ls lt
+  856  ls -lt
+  857  date "+%H:%M:%S   %d/%m/%y"
+  858  ls
+  859  df -h
+  860  ls
+  861  cd apps
+  862  ls
+  863  cd rvgcaptcha/
+  864  ls
+  865  cd accounts/
+  866  ls
+  867  cd turingtest.ravegroup.cz
+  868  ls
+  869  cd ..
+  870  cd turingtest.ravegroup.cz:5000
+  871  ls
+  872  cd ..
+  873  ls
+  874  cd fonts
+  875  ls
+  876  cd ..
+  877  cd cert
+  878  ls
+  879  cd ..
+  880  ls
+  881  cd backups
+  882  ls
+  883  cd ..
+  884  cd static
+  885  ls
+  886  ls -lh
+  887  cd ..
+  888  ls
+  889  cd ..
+  890  ls
+  891  cd ..
+  892  ls
+  893  cat index.html
+  894  cat index.html.+
+  895  cat index.html.1
+  896  ls
+  897  cd apps
+  898  ls
+  899  cd rvgcaptcha/
+  900  ls
+  901  cat rvgcaptcha.py 
+  902  pip
+  903  ls
+  904  cat rvgcaptcha.py
+  905  exit
+  906  ls
+  907  cd apps
+  908  ls
+  909  cd rvgcaptcha/
+  910  ls
+  911  nano rvgcaptcha.py 
+  912  sudo reboot
+  913  ls
+  914  cd apps
+  915  ls
+  916  cd rvgcaptcha
+  917  ls
+  918  cd /
+  919  ls
+  920  cd usr
+  921  ls
+  922  cd ..
+  923  cd var
+  924  ls
+  925  cd www
+  926  ls
+  927  cd application
+  928  ls
+  929  cd rvgcaptcha
+  930  ls
+  931  nano rvgcaptcha.py
+  932  sudo reboot
+  933  ls
+  934  cd /var
+  935  ls
+  936  cd www
+  937  ls
+  938  cd application/
+  939  ls
+  940  cd rvgcaptcha/
+  941  ls
+  942  nano rvgcaptcha.py
+  943  sudo reboot
+  944  cd /var/html
+  945  ls
+  946  cd /var/www
+  947  ls
+  948  cd application/
+  949  cd rvgcaptcha/
+  950  ls
+  951  cat rvgcaptcha.py
+  952  cd /var/log
+  953  ls
+  954  cd ..
+  955  ls
+  956  cd www/application/rvgcaptcha/
+  957  ls
+  958  nano rvgcaptcha.py
+  959  sudo reboot
+  960  cd /var/www/application/rvgcaptcha/
+  961  ls -lh
+  962  cd ..
+  963  cd log
+  964  ls
+  965  cat lastlog
+  966  cat syslog
+  967  cd ..
+  968  cd www/application/rvgcaptcha/
+  969  ls -lh
+  970  nano rvgcaptcha.py
+  971  sudo reboot
+  972  cd /var/log
+  973  cat syslog
+  974  cd ..
+  975  cd www/application/rvgcaptcha/
+  976  ls -lh
+  977  nano rvgcaptcha.py
+  978  sudo reboot
+  979  cd /var/www/application/rvgcaptcha/
+  980  cd /var/log
+  981  cat syslog
+  982  cd ..
+  983  cd www/application/rvgcaptcha/
+  984  nano rvgcaptcha.py
+  985  sudo reboot
+  986  cd /var/log
+  987  cat syslog
+  988  service --status-all
+  989  ls
+  990  cat nginx
+  991  cd nginx
+  992  ls
+  993  cat error.log
+  994  cat access.log
+  995  ls -lh
+  996  cat application.error.log 
+  997  cat error.log
+  998  cd ..
+  999  ls
+ 1000  cat syslog
+ 1001  cd ..
+ 1002  cd var/www/application/rvgcaptcha/
+ 1003  ls -lh
+ 1004  nano rvgcaptcha.py
+ 1005  sudo reboot
+ 1006  cd /var/log
+ 1007  cat syslog
+ 1008  cd /var/www/application/rvgcaptcha/
+ 1009  nano rvgcaptcha.py
+ 1010  sudo reboot
+ 1011  cd /var/log
+ 1012  cat syslog
+ 1013  cd /var/www/application/rvgcaptcha/
+ 1014  ls
+ 1015  nano rvgcaptcha.py
+ 1016  sudo reboot
+ 1017  cd /var/log
+ 1018  cat syslog
+ 1019  cd /var/www/application/rvgcaptcha/
+ 1020  nano rvgcaptcha.py
+ 1021  sudo reboot
+ 1022  cd /var/log
+ 1023  cat syslog
+ 1024  cd /var/www/application/rvgcaptcha/
+ 1025  nano rvgcaptcha.py
+ 1026  sudo reboot
+ 1027  cd /var/log
+ 1028  cat syslog
+ 1029  cd /var/www/application/rvgcaptcha/
+ 1030  nano rvgcaptcha.py
+ 1031  sudo reboot
+ 1032  ls
+ 1033  cd /var/log
+ 1034  cat syslog
+ 1035  cd /var/www/application/rvgcaptcha/
+ 1036  nano rvgcaptcha.py
+ 1037  sudo reboot
+ 1038  cd /var/log
+ 1039  ls
+ 1040  cat syslog
+ 1041  cd /var/www/application/rvgcaptcha/
+ 1042  nano rvgcaptcha.py
+ 1043  sudo reboot
+ 1044  cd /var/log
+ 1045  cat syslog
+ 1046  cd /var/www/application/rvgcaptcha/
+ 1047  ls
+ 1048  nano rvgcaptcha.py
+ 1049  touch sendmail.py
+ 1050  nano sendmail.py
+ 1051  ls
+ 1052  python sendmail.py
+ 1053  nano sendmail.py
+ 1054  python3
+ 1055  ls
+ 1056  python3 sendmail.py 
+ 1057  nano sendmail.py
+ 1058  python3 sendmail.py 
+ 1059  nano sendmail.py
+ 1060  nano rvgcaptcha.py
+ 1061  cd /var/log
+ 1062  cat syslog
+ 1063  cd /var/www/application/rvgcaptcha/
+ 1064  nano rvgcaptcha.py
+ 1065  sudo reboot
+ 1066  cd /var/log
+ 1067  cat syslog
+ 1068  cd /var/www/application/rvgcaptcha/
+ 1069  nano rvgcaptcha.py
+ 1070  sudo reboot
+ 1071  cd /var/log
+ 1072  cat syslog
+ 1073  ls
+ 1074  cd /var/www/application/rvgcaptcha/
+ 1075  ls -lh
+ 1076  nano sendmail.py
+ 1077  python3 sendmail.py
+ 1078  cat sendmail.py
+ 1079  nano rvgcaptcha.py
+ 1080  cat sendmail.py
+ 1081  nano rvgcaptcha.py
+ 1082  sudo reboot
+ 1083  cd /var/log
+ 1084  ls
+ 1085  cat syslog
+ 1086  cd /var/www/application/rvgcaptcha/
+ 1087  cat sendmail.py
+ 1088  nano rvgcaptcha.py
+ 1089  sudo reboot
+ 1090  cd /var/log
+ 1091  ls
+ 1092  cat syslog
+ 1093  cd /var/www/application/rvgcaptcha/
+ 1094  ls
+ 1095  nano rvgcaptcha.py
+ 1096  sudo reboot
+ 1097  cd /var/www/application/rvgcaptcha/
+ 1098  ls
+ 1099  nano rvgcaptcha.py
+ 1100  sudo reboot
+ 1101  cd /var/www/application/rvgcaptcha/
+ 1102  nano rvgcaptcha.py
+ 1103  sudo reboot
+ 1104  cd /var/log
+ 1105  cat syslog
+ 1106  cd /var/www/application/rvgcaptcha/
+ 1107  nano rvgcaptcha.py
+ 1108  sudo reboot
+ 1109  cd /var/log
+ 1110  cat syslog
+ 1111  ls
+ 1112  cd /var/www/application/rvgcaptcha/
+ 1113  ls
+ 1114  python3 sendmail.py
+ 1115  nano rvgcaptcha.py
+ 1116  history > history.txt

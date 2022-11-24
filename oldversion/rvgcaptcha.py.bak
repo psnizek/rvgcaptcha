@@ -1,0 +1,98 @@
+#!/usr/bin/python3
+from flask import Flask, request, jsonify, g
+from flask_cors import CORS
+from PIL import Image, ImageDraw, ImageFont
+import random
+import uuid
+import datetime
+import json
+app = Flask (__name__)
+cors = CORS(app)
+
+class uuid_dictionary(dict):
+    def __init__(self):
+        self = dict()
+        
+    def add(self, captuuid, captsum):
+        self[captuuid] = captsum
+    
+    def lookup(self, captuuid, captsum):
+        if captuuid in self: 
+            if self[captuuid] == captsum:
+                result = "pass"
+            else:
+                result = "fail"
+        else:
+             result = "fail"
+        return result
+
+        
+class genPic():
+    def __init__(self):
+        pass
+    def new(val1, op, val2, captid):
+        img = Image.new('RGB', (90, 45), color = 'red')
+        d = ImageDraw.Draw(img)
+        myFont = ImageFont.truetype('./fonts/NanumPenScript-Regular.ttf', 32)
+        d.text((15, 5), val1 + " " + op + " " + val2, font = myFont)
+        img.save("task.png")
+        fpath = "static/" + captid + ".png"
+        url = request.url_root + "static/" + captid + ".png"
+        img.save(fpath)
+        return url 
+
+    
+def initGlobals():
+    global captid_dict
+    captid_dict = uuid_dictionary()
+    
+
+@app.before_first_request
+def before_first_request():
+    app.logger.info("before_first_request")
+    global captid_dict
+    captid_dict = uuid_dictionary()
+    global seed
+    seed = datetime.time()
+    random.seed(seed)
+
+    
+@app.route("/")
+def hello():
+    return "RVG Turing Test"
+
+
+@app.route("/GetCaptYa")
+def randomNumber():
+    number1 = str(random.randint(0, 19))
+    number2 = str(random.randint(0, 19))
+    captformula = number1 + " + " + number2
+    captsum = str(int(number1) + int(number2))
+    captuuid = str(uuid.uuid1())
+    captid_dict.add(captuuid, captsum)
+    url = genPic.new(number1, "+", number2, captuuid)
+    print(captformula + " UUID: " + captuuid + " " + url)
+    return jsonify(
+        uuid = captuuid,
+        url = url
+    )
+
+
+@app.route('/legitimize', methods=['GET'])
+def legitimize():
+    params = request.args.to_dict()
+    print("PARAMS: ", params)
+    captsum = params["solution"]
+    captuuid = params["uuid"]
+    print("solution: ", captsum)
+    print("UUID: ", captuuid)
+    return jsonify(captid_dict.lookup(captuuid, captsum))
+
+
+
+# if __name__ == "__main__":
+#     captid_dict = uuid_dictionary()
+#    seed = datetime.time()
+#    print(seed)
+#    random.seed(seed)
+#    app.run(debug=True,host='0.0.0.0')

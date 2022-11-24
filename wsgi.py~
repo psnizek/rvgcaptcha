@@ -1,0 +1,9 @@
+#!/usr/bin/python3
+from rvgcaptcha import app, uuid_dictionary
+import random, datetime
+captid_dict = uuid_dictionary()
+seed = datetime.time
+
+
+if __name__ == "__main__":
+     app.run()
